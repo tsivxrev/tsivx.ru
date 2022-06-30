@@ -14,7 +14,7 @@ export default {
       }
     },
     async mounted() {
-      const response = await fetch('https://stage-api.tsivx.workers.dev/landing/info');
+      const response = await fetch('https://stage-api.tsivx.ru//landing/info');
       const info = await response.json();
 
       Object.assign(this.$data, info)
